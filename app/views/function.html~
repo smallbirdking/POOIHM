@@ -1,0 +1,5 @@
+<ul>
+	<li ng-repeat = "etab in education.function " >
+	{{etab.name}}
+	</li>
+</ul>
