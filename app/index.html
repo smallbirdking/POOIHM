@@ -2,27 +2,7 @@
 <html class="no-js">
   <head>
     <meta charset="utf-8">
-   <title>Resume Website Template | Home :: w3layouts</title>
-   <script src="./scripts/controlers/jquery.min.js"> </script>
-   <link href="./styles/bootstrap.css" rel='stylesheet' type='text/css' />
-   <link href="./styles/style.css" rel="stylesheet" type="text/css" media="all" />
-   <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
-
-   <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo (0,1); } </script>
- <!---- start-smoth-scrolling---->
-    <script type="text/javascript" src="./scripts/controlers//move-top.js"></script>
-    <script type="text/javascript" src="./scripts/controlers/easing.js"></script>
-    <script type="text/javascript">
-      jQuery(document).ready(function($) {
-        $(".scroll").click(function(event){   
-          event.preventDefault();
-          $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-        });
-      });
-    </script>
-  <!---- start-smoth-scrolling---->
-
-
+    <title>Resume Website Template | Home :: w3layouts</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
@@ -32,30 +12,26 @@
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+
     <link rel="stylesheet" href="styles/main.css">
+    <link href="./styles/style.css" rel="stylesheet" type="text/css" media="all" />
+
     <!-- endbuild -->
   </head>
 
   <body ng-app="ihmApp">
 
-
-
-
-
-
-
-
-
-<!------headerbg starts--------->
+<!------headerbg starts-------->
  <div id="top-top" class="headerbg">
-   <!------header starts--------->
+   <!---header starts-------->
      <div class="header">
-     <!------container starts--------->
+     <!------container starts-------->
         <div class="container">
            <div class="logo">
-            <a href="#">Resume</a>
+            <a href="#/">Resume</a>
            </div>
-          <!------Navigation starts--------->
+          <!--Navigation starts-->
           <div class="nav">
            <ul>
              <li><a class="scroll" href="#about">ABOUT</a></li>
@@ -64,45 +40,52 @@
              <li><a class="scroll" href="#contact">CONTACT</a></li>
            </ul>
          </div>
-          <!------Navigation ends-------->
+          <!--Navigation ends-->
           <div class="clear"></div>
         </div>
-     <!------container ends--------->
+     <!--container ends-->
      </div>
-   <!------header ends--------->
-   <!------Banner starts--------->
+   <!--header ends-->
+   <!--Banner starts-->
      <div class="banner">
         <div class="container">
          <div class="banner-info">
             <div class="bannerlogo">
-            <img src="./images/diamond.png">
+            <img src="./images/diamond.png"  >
             </div>
             <div class="bannerhead">
-              <h2>My name is <span>John Deo</span></h2>
-              <h3>PHP Programmer</h3>
-              <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
-            lorem quis bibendum auctor,nisi elit consequat ipsum,nec sagittis sem nibh id elit.Duis.</p>
+              <h2>My name is <span>WANG Yuqi</span></h2>
+              <h3>Student of computer science</h3>
+
+              <p>Nationalité chinoise</p>
+               <p>   Knowledge is a treasure, but practice is the key to it.</p>
+               <p align="center">——Fuller </p>
             <a class="downarrow scroll" href="#about"><span> </span></a>
             </div>
        </div>
        <div class="clear"></div>
       </div>
     </div>
-    <!------Banner ends-------->
+    <!--Banner ends-->
  </div>
- <!------Headerbg ends-------->
+ <!--Headerbg ends-->
 
+  <script type="text/javascript" src="./scripts/controllers//move-top.js"></script>
+    <script type="text/javascript" src="./scripts/controllers/easing.js"></script>
+    <script type="text/javascript">
+      jQuery(document).ready(['$',function($) {
+        $(".scroll").click(['event',function(event){   
+          event.preventDefault();
+          $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+        }]);
+      }]);
+  </script>
 
-
- <!------Content starts--------->
- <div class="content">
-     
-     <!--<div class="container">-->
+ <!--Content starts-->
+    <div class="content">
          <div ng-view></div>
-      <!--</div>-->
     </div>
 
- 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
        !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
@@ -113,6 +96,8 @@
        ga('create', 'UA-XXXXX-X');
        ga('send', 'pageview');
     </script>
+
+   
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
@@ -132,8 +117,15 @@
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/about.js"></script>
-  <script src="scripts/controllers/skills.js"></script>
-        <!-- endbuild -->
+        <script src="scripts/controllers/skills.js"></script>
+        <script src="scripts/controllers/portfolio.js"></script>
+        <script src="scripts/controllers/contact.js"></script>
+
+
+
+<!--<script src="./scripts/controllers/jquery.min.js"> </script>
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo (0,1); } </script>-->
+
 
 
 </body>

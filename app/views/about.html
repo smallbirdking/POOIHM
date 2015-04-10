@@ -3,32 +3,23 @@
          <div class="header-section text-center">
           <h2><span> </span>ABOUT<span> </span></h2>
           </div>
-         <span><p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
-           lorem quis bibendum auctor,nisi elit consequat ipsum,nec sagittis sem nibh id elit.Duis.</p></span>
-           
-        <div class="years">  
+         <span>
+          <p ng-repeat = "etab in about.formation ">{{etab.intro}}</p></span>
+          
+         <div class="years" ng-repeat = "etab in about.formation " >
+          <h4><b>{{etab.year}}</b></h4>
+          <span><h4>{{etab.address}}</h4></span>
+          <span><h4>{{etab.name}}</h4></span>
+          <i>{{etab.content}}</i>
+         </div>
+
+      <!--  <div class="years">  
         <h4><b>2009</b></h4>
          <span><h4>Project Manager Web Center</h4></span>
          <p><i>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
           lorem quis bibendum auctor,nisi elit consequat ipsum,nec sagittis sem nibh id elit.Duis.</i></p>
-        </div> 
-        
-        <div class="years">     
-         <h4><b>2012</b></h4>
-         <span><h4>Manager Delta Coders</h4></span>
-         <p><i>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
-          lorem quis bibendum auctor,nisi elit consequat ipsum,nec sagittis sem nibh id elit.Duis.</i></p>
-        </div> 
-          
-         <div class="years">    
-         <h4><b>2013</b></h4>
-         <span><h4>Owner Alternative Labs</h4></span>
-         <div class="labs">
-           <p><i>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
-            lorem quis bibendum auctor,nisi elit consequat ipsum,nec sagittis sem nibh id elit.Duis.
-            sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec teltus</i></p>
-           </div>
-        </div>
+        </div> -->
+       
          <a class="arrow scroll" href="#skills"><span> </span></a>
-      </div>
-    </div>
+     </div>
+</div>

@@ -343,7 +343,8 @@ module.exports = function (grunt) {
             '*.html',
             'views/{,*/}*.html',
             'images/{,*/}*.{webp}',
-            'styles/fonts/{,*/}*.*'
+            'styles/fonts/{,*/}*.*',
+            'assets/*.json'
           ]
         }, {
           expand: true,
@@ -415,8 +416,8 @@ module.exports = function (grunt) {
     'wiredep',
     'concurrent:test',
     'autoprefixer',
-    'connect:test',
-    'karma'
+    'connect:test'
+    // 'karma'
   ]);
 
   grunt.registerTask('build', [

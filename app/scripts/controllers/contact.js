@@ -8,10 +8,18 @@
  * Controller of the testApp
  */
 angular.module('ihmApp')
-  .controller('SkillsCtrl',['$scope', function ($scope) {
+  .controller('ContactCtrl',['$scope','$http', function ($scope,$http) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
+    $scope.contact='';
+	$http.get('assets/contact.json')
+		.success(function(data){
+			$scope.contact=data;
+		})
+		.error(function(error){
+			console.log(error);
+		});
   }]);

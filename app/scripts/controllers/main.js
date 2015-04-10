@@ -8,7 +8,7 @@
  * Controller of the ihmApp
  */
 angular.module('ihmApp')
-  .controller('MainCtrl', function ($scope) {
+  .controller('MainCtrl', ['$scope',function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
@@ -24,4 +24,4 @@ angular.module('ihmApp')
 	$scope.toto=n}
     ;*/
 
-  });
+  }]);
